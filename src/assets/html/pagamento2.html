@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursiFlix - Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamentos/pagamento2.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <!--logo-->
+        <a href="index.html">
+            <img class="logo"  src="../icons/logo/logo-CursiFlix.png" alt="">
+        </a>
+
+         <!--menu-->
+         <div class="menu">
+
+            <!--menu left-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="cursos2.html">Cursos</a></li>
+                </ul>
+            </div> <!--fim do menu left-->
+
+            <!--menu rigth-->
+            <div class="menu-right">
+                <ul>
+                    <li><a href="login.html">Login</a>
+                        <img src="../icons/login.png" alt="" width="15px"></li>
+                    <li><a href="">Assinar</a></li>
+                </ul>
+            </div>
+        </div> <!--fim do menu-->
+    </div>
+
+        <div id="box">
+            <img src="../icons/encryption2.png" alt="" width="40px">
+            <h2>Informe seus dados</h2>
+            <img src="../icons/pix.png" alt="">
+            <br>
+            <br>
+            <form id="payment">
+                <div class="form">
+                    <label for="plano">Escolha o plano:</label>
+                    <select id="plano" required>
+                        <option value="mensal" data-valor="21,90">Plano mensal - R$21,90/mês</option>
+                        <option value="anual" data-valor="165,90">Plano anual - R$165,90/ano</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <input required type="text" id="nome" placeholder="Nome completo">
+                </div>
+
+                <div class="form">
+                    <input required type="text" id="chave-pix" placeholder="Chave Pix">
+                </div>
+            </form>
+
+            <button type="button" id="realizar-pagamento">Realizar pagamento</button>
+        </div>
+
+<script src="../js/pagamento2.js"></script>
+</body>
+</html>

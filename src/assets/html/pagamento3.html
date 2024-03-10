@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursiFlix - Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamentos/pagamento3.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <!--logo-->
+        <a href="index.html">
+            <img class="logo"  src="../icons/logo/logo-CursiFlix.png" alt="">
+        </a>
+
+         <!--menu-->
+         <div class="menu">
+
+            <!--menu left-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="cursos2.html">Cursos</a></li> 
+                </ul>
+            </div> <!--fim do menu left-->
+
+            <!--menu rigth-->
+            <div class="menu-right">
+                <ul>
+                    <li><a href="login.html">Login</a>
+                        <img src="../icons/login.png" alt="" width="15px"></li>
+                    <li><a href="">Assinar</a></li>
+                </ul>
+            </div>
+        </div> <!--fim do menu-->
+    </div>
+
+    <div id="box">
+        <img src="../icons/encryption2.png" alt="" width="40px">
+        <h2>Pagamento com boleto</h2>
+        <img src="../icons/boleto.png" alt="">
+        <br>
+        <br>
+        <form id="payment">
+            <div class="form">
+                <input type="text" id="nomeTitular" placeholder="Digite o nome do titular">   
+            </div>
+            <div class="form">
+                <input type="text" id="cpf" placeholder="Digite o CPF do titular" required>
+            </div>
+            <div class="form">
+                <input type="text" id="valor" placeholder="Digite o valor a pagar">
+            </div>
+        </form>
+
+        <button onclick="gerarBoleto()" id="gerar-boleto">Gerar boleto</button>
+
+        <div class="boleto-info" id="boletoInfo" style="display: none;">
+            <h3>Boleto Gerado</h3>
+            <p id="resultado"></p>
+            <button onclick="irParaOutraPagina()">Ir para outra página</button>
+
+    </div>
+
+<script src="../js/pagamento3.js"></script>
+</body>
+</html>

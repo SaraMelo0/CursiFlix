@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 110px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+.geral {
+    margin-top: 9rem;
+}
+
+.overview {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+h2 {
+    color: white;
+    margin-left: 50px;
+}
+
+.box {
+    background-color: white;
+    width: 222px;
+    height: 140px;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+}
+
+.icon {
+    background-color: #fc1722;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.text {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fc1722;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.big-box {
+    background-color: white;
+    width: 272px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+p {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.circle {
+    margin-top: 50px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff636b99; 
+}
+  
+.fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0, 50px, 50px, 0);
+    background-color: #fc1722; 
+    transform: rotate(72deg); /* Ângulo de 20% de 360° */
+}
+  
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+span {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.progress {
+    background-color: white;
+    width: 272px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.progress-ring {
+    margin-top: 50px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .progress-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fc1722;
+    border-radius: 50%;
+    clip: rect(0, 50px, 20px, 0);
+  }
+  
+.progress-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+  
+@media screen and (max-width: 768px) {
+    .box {
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+  
+    .progress {
+        width: 150px;
+    }
+  }
+  
+  
+  

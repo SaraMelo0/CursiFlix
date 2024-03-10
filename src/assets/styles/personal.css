@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 110px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+.container {
+    color: #111;
+    background-color: #fff;
+    width: 660px;
+    height: 600px;
+    padding: 20px;
+    margin: 90px auto;
+    border-radius: 15px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+} 
+
+.rounded-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin: 10px;
+}
+
+#changeImage {
+    font-size: 10px;
+    color: #fc1722;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+}
+
+#changeImage:hover {
+    background-color: #dcdcdc;
+    color: #111;
+    transition: 0.4s;
+}
+  
+input[type="text"], input[type="password"], input[type="tel"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: default;
+}
+
+#userForm {
+    text-align: center;
+}
+
+.change-data {
+    font-size: 15px;
+    color: #fc1722;
+    text-decoration: none;
+}
+
+.change-data:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 7px;
+}
+
+#btn {
+    height: 35px;
+    width: 20%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover {
+    background-color: #fc1722;
+    transition: 0.3s;
+}
+
+#btn2 {
+    height: 35px;
+    width: 18%;
+    color: #fff;
+    background-color:#8C8C8C;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    background-color: #aaaaaa;
+    transition: 0.3s;
+}
+
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .container {
+        width: 90%;
+        height: 90%;
+        margin: 90px auto 20px auto;
+        padding: 10px;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    input[type="text"], input[type="password"], input[type="tel"] {
+        width: 100%;
+    }
+
+    button {
+        width: 45%;
+        font-size: 14px;
+    }
+
+    #btn {
+        width: 45%;
+    }
+
+    #btn2 {
+        width: 40%;
+    }
+}

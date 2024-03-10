@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursiFlix - Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="shortcut icon" href="../icons/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <!--logo-->
+        <img class="logo"  src="../icons/logo/logo-CursiFlix.png" alt="">
+        
+         <!--menu-->
+         <div class="menu">
+
+            <!--menu left-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="meus-estudos.html">Meus estudos</a></li> 
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="gerencimentoDeCurso.html">Gerenciar curso</a></li> 
+                </ul>
+            </div> <!--fim do menu left-->
+
+            <!--menu rigth-->
+            <div class="menu-right">
+                <ul>
+                    <li><a href="personal-data-page.html" id="link">Minha conta</a> 
+                    <img src="../icons/usuario.png" alt="" width="15px"></li>
+                    <li><a href="index.html">Sair</a>
+                        <img src="../icons/login-alt.png" alt="" width="15px"></li>
+                </ul>
+            </div>
+        </div> <!--fim do menu-->
+    </div>
+
+    <header class="banner">
+        <div class="contents">
+            <h2 class="title">Aprenda, cresça e alcance seus objetivos <br> com a nossa plataforma educacional <br> de excelência.</h2>
+            <h3 class="subtitle">Descubra um mundo de conhecimento e oportunidades!</h3>
+        </div>
+        <div class="banner--fadebotton"></div>
+    </header>
+
+    <div class="row">
+        <h3>Nossos cursos</h3>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"><img src="../icons/angulo-esquerdo.png" alt="" width="25px" style="margin-top: 12px;"></i>
+            <ul class="carousel">
+            <li class="card">
+                <a href="pagina-de-curso.html">
+                    <img src="../images/desenvolvimento/html e css.jpg" alt="">
+                   
+                
+                    <h4 style="padding-top: 4px;padding-left: 4px;">Curso de HTML/CSS</h4>
+                    <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                </a>
+                        <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Domine a criação web com nosso curso de HTML/CSS e transforme suas ideias em sites incríveis e funcionais.</p>
+
+                <div class="row_category">
+                    <p>Desenvolvimento</p>
+                </div>
+            </li>
+
+            <li class="card">
+
+                    <img src="../images/fotografia/fotografia.jpg" alt="">
+                
+                <h4 style="padding-top: 4px;padding-left: 4px;color: #fc1722;">Curso de Fotografia</h4>
+                <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                    <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Desenvolva suas habilidades fotográficas e liberte sua criatividade com o nosso curso de fotografia.</p>
+
+                <div class="row_category">
+                    <p>Fotografia</p>
+                </div>
+            </li>
+
+            <li class="card">
+
+                <img src="../images/musica/violao.jpg" alt="">
+
+               <h4 style="padding-top: 4px;padding-left: 4px;color: #fc1722;">Curso de Violão</h4>
+                <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                    <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Explore a música com nosso curso de violão. Aprenda acordes, crie belas melodias e encante com seu som único.</p>
+
+                <div class="row_category">
+                    <p>Música</p>
+                </div>
+            </li>
+
+            <li class="card">
+
+                <img src="../images/design/design gráfico.jpg">
+              
+                <h4 style="padding-top: 4px;padding-left: 4px;font-size: 15px; color: #fc1722;">Curso de Design gráfico e ilustração</h4>
+                <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                    <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Explore a criatividade com nosso curso de Design Gráfico e Ilustração. Transforme ideias em obras de arte impressionantes.</p>
+
+                <div class="row_category">
+                    <p>Design</p>
+                </div>
+            </li>
+
+            <li class="card">
+                
+                  <img src="../images/desenvolvimento/python.jpg">
+                
+                  <h4 style="padding-top: 4px;padding-left: 4px; color: #fc1722;">Curso de Python</h4>
+                  <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                      <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Domine Python e impulsione sua carreira na programação. Aprenda a criar soluções eficientes e inovadoras.</p>
+  
+                  <div class="row_category">
+                      <p>Desenvolvimento</p>
+                  </div>
+                </li>
+
+              <li class="card">
+
+                  <img src="../images/moda/moda.jpg">
+                
+                  <h4 style="padding-top: 4px;padding-left: 4px;font-size: 15px; color: #fc1722;">Curso de Moda</h4>
+                  <img src="../icons/4stars.png" alt="" height="15px" class="icon_star">
+                      <p style="font-size: 15px; text-indent: 3px; padding-left: 4px;">Explore sua paixão pela moda em nosso curso. Aprenda design, tendências e crie seu estilo único no mundo fashion.
+  
+                  <div class="row_category">
+                      <p>Design</p>
+                  </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"><img src="../icons/angulo-direito.png" alt="" width="25px" style="margin-top: 12px;"></i>
+        </div>
+    </div>
+
+
+
+
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

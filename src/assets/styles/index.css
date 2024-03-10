@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 110px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1111111f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+.banner {
+    background-image: url(../images/student.1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+
+.contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 1.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.subtitle {
+    padding-left: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.button #btn {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 15px 30px;
+    background-color: #e50914;
+}
+
+.button #btn:hover {
+    background-color: #fc1722;
+    transition: 0.3s;
+}
+
+.banner--fadebotton {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.449), #111);
+}
+
+.row {
+    color: white;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper i {
+    top: 90%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+    left: 10px;
+}
+
+.wrapper i:last-child{
+    right: 30px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 300px;
+    max-height: 290px;
+    min-width: 248px;
+    border-radius: 17px 17px 0 0;
+}
+
+.card {
+    scroll-snap-align: start;
+    color: #111;
+    background-color: white;
+    border: white solid 3px;
+    margin-top: 10px;
+    width: 253px;
+    height: 365px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fc1722;
+}
+
+.icon_star {
+    padding-right: 9rem;
+}
+
+.row_category {
+    font-size: 13px;
+    color: white;
+    background-color: #fc1722;
+    width: 120px;
+    height: 35px;
+    border-radius: 17.5px;
+    text-align: center;
+    padding-top: 9px;
+    margin-left: 9em;
+}
+
+.card:hover {
+    border: #fc1722 outset 3px;
+    transform: translate(2px, -8px);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .wrapper i {
+        top: 100%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .card {
+        margin-top: 10px;
+    }
+
+    .row_category {
+        margin-left: 7em;
+    }
+
+    .row {
+        margin-top: 30px;
+    }
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+
+    .wrapper i {
+        top: 100%;
+    }
+}
+
+.categories {
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.category {
+    background-color: white;
+    width: 250px;
+    height: 240px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 5px;
+    display: inline-block;
+    transition: 0.5s ease-in-out
+}
+
+.category:hover {
+    transform: translate(2px, -8px);
+}
+
+.img_category {
+    padding-top: 34px;
+}
+
+.p_category {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 6px;
+    color: #fc1722;
+}
+
+.product {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.animation {
+    display: inline-block;
+}
+
+.conteudo {
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 9rem;
+}
+
+.plans {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    margin-top: 15rem;
+    padding: 45px;
+}
+
+.type_plans {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.plan {
+    background-color:#fc1722;
+    width: 469px;
+    height: 90px;
+    padding-top: 30px;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.plan_description {
+    background-color: white;
+    color: #111;
+    width: 469px;
+    height: 340px;
+    padding-top: 30px;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.plan_description ul {
+    list-style: none;
+}
+
+.plan_description ul li {
+    padding-right: 50px;
+}
+
+.button .btn {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 15px 30px;
+    background-color: #e50914;
+}
+
+.button .btn:hover {
+    background-color: #fc1722;
+    transition: 0.3s;
+}

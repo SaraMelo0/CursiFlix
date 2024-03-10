@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+#box {
+    background-color: white;
+    padding: 20px;
+    width: 430px;
+    height: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    border-radius: 14px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_box {
+    margin-bottom: 10px;
+}
+
+.input_box input {
+    height: 45px;
+    width: 91%;
+    color: #111;
+    background-color: rgb(225, 224, 224);
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input_box .box {
+    margin-right: 7px;
+    margin-left: 7px;
+    width: 43.4%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form_group {
+    margin-bottom: 5px;
+}
+
+.plan-container {
+    height: 50px;
+    width: 91%;
+    color: #111;
+    background-color: rgb(225, 224, 224);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-container p {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.plan-container span {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.plan-container a {
+    text-decoration: none;
+    color: #fc1722;
+    font-weight: 600;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.plan-container a:hover {
+    text-decoration: underline;
+}
+
+#btn {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 15px 30px;
+    background-color: #e50914;
+    text-align: center;
+    
+}
+
+#btn:hover {
+    background-color: #fc1722;
+    transition: 0.3s;
+}

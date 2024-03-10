@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursiFlix - Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamentos/pagamento1.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <!--logo-->
+        <a href="index.html">
+            <img class="logo"  src="../icons/logo/logo-CursiFlix.png" alt="">
+        </a>
+
+         <!--menu-->
+         <div class="menu">
+
+            <!--menu left-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="cursos2.html">Cursos</a></li>
+                </ul>
+            </div> <!--fim do menu left-->
+
+            <!--menu rigth-->
+            <div class="menu-right">
+                <ul>
+                    <li><a href="login.html">Login</a>
+                        <img src="../icons/login.png" alt="" width="15px"></li>
+                    <li><a href="">Assinar</a></li>
+                </ul>
+            </div>
+        </div> <!--fim do menu-->
+    </div>
+
+        <div id="box">
+            <img src="../icons/encryption2.png" alt="" width="40px">
+            <h2>Informe os dados do seu cartão de crédito ou débito</h2>
+            <img src="../icons/cartao.png" alt="" width="200px" style="padding: 10px;">
+
+            <div class="formulario">
+                <form action="/" method="post" enctype="application/x-www-form-urlencoded">
+                    <div class="input_box">
+                        <input required type="text" placeholder="Número do cartão">
+                    </div>
+                    <div class="input_box">
+                        <input required type="text" placeholder="Data de Validade" class="box">
+                        <input required type="text" placeholder="CVV" class="box">
+                    </div>
+                    <div class="input_box">
+                        <input required type="text" placeholder="Nome">
+                    </div>
+                    <div class="input_box">
+                        <input required type="text" placeholder="Sobrenome">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <p>Escolha sua forma de pagamento preferida:</p>
+                    <form id="paymente_form">
+                        <div class="form_group">
+                            <input type="radio" name="payment" id="credit">
+                            <label for="credit">Crédito</label>
+                        </div>
+                        <div class="form_group">
+                            <input type="radio" name="payment" id="debit">
+                            <label for="credit">Débito</label>
+                        </div>
+                    </form>
+            </div>
+
+            <div class="plan-container">
+                <div>
+                    <p id="current-plan">Plano mensal</p>
+                    <span id="current-price">$21,90/mês</span>
+                </div>
+                <a id="trocar-button">Trocar</a>
+            </div>
+
+            <a href="cadastro.html"><button id="btn">Iniciar assinatura</button></a>
+        </div>
+
+<script src="../js/pagamento1.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursiFlix - Dados pessoais</title>
+    <link rel="stylesheet" href="../styles/personal.css">
+    <link rel="shortcut icon" href="../icons/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <!--logo-->
+        <a href="dashboard.html">
+            <img class="logo"  src="../icons/logo/logo-CursiFlix.png" alt="">
+        </a>
+        
+         <!--menu-->
+         <div class="menu">
+
+            <!--menu left-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="dashboard.html">Cursos</a></li>
+                    <li><a href="meus-estudos.html">Meus estudos</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="gerencimentoDeCurso.html">Gerenciar curso</a></li> 
+            </div> <!--fim do menu left-->
+
+            <!--menu rigth-->
+            <div class="menu-right">
+                <ul>
+                    <li><a href="personal-data-page.html" id="link">Minha conta</a> 
+                    <img src="../icons/usuario.png" alt="" width="15px"></li>
+                    <li><a href="index.html">Sair</a>
+                        <img src="../icons/login-alt.png" alt="" width="15px"></li>
+                </ul>
+            </div>
+        </div> <!--fim do menu-->
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <div class="circle">
+                <img src="../images/homem.jpg" alt="Imagem" class="rounded-image" id="profileImage">
+            </div>
+            <h2 id="userName">Gabriel Fernandes de Oliveira</h2>
+             <!--Para permitir a alteração da imagem do perfil-->
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <button id="changeImage">Alterar imagem</button>
+        </div>
+        <br>
+        <form id="userForm">
+            <input type="text" id="name" name="name" placeholder="Nome">
+            <a href="#" class="change-data" id="changeName">Alterar nome</a>
+            <br><br>
+            <input type="text" id="email" name="email" placeholder="nome.sobrenome@email.com">
+            <a href="#" class="change-data" id="changeEmail">Alterar email</a>
+            <br><br>
+            <input type="password" id="password" name="password" placeholder="********">
+            <a href="#" class="change-data" id="changePassword">Alterar senha</a>
+            <br><br>
+            <input type="tel" id="phone" name="phone" placeholder="(79)9999-9990">
+            <a href="#" class="change-data" id="changePhone">Alterar telefone</a>
+            <br><br>
+            <button type="submit" id="btn">Salvar</button>
+            <br>
+            <button type="submit" id="btn2">Excluir conta</button>
+        </form>
+    </div>
+
+
+
+    <script src="../js/personal.js"></script>
+</body>
+</html>

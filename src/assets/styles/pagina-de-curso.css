@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 110px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1111111f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.banner {
+    background-image: url(../images/desenvolvimento/html-e-css02.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+
+.contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 1.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.subtitle {
+    padding-left: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.banner--fadebotton {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.449), #111);
+}
+
+#icon_star {
+    margin-top: -30px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+.progress-bar-container {
+    width: 30%;
+    height: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+
+.progress-bar {
+    width: 60%;
+    height: 10px;
+    background-color: #e50914;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .progress-bar-container {
+        width: 80%;
+    }
+}
+
+.percentage {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    color: #111;
+}
+
+.modules {
+    color: white;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.module img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 300px;
+    max-height: 290px;
+    min-width: 248px;
+    border-radius: 8px 8px 0 0;
+}
+
+.module {
+    color: #111;
+    background-color: white;
+    border: white solid 3px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 270px;
+    height: 365px;
+    border-radius: 10px;
+}
+
+.module a {
+    text-decoration: none;
+    color: #fc1722;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 3rem;
+    padding: 7px 50px;
+    background-color: #e50914;
+}
+
+.btn:hover {
+    background-color: #fc1722;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .contents {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+
+    .modules {
+        margin-top: -30px;
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .module {
+        margin: auto;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+}

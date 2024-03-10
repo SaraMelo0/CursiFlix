@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #111;
+}
+
+.logo {
+    width: 110px;
+    margin-left: 25px;
+    object-fit: contain;
+}
+
+.nav {
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.nav_black {
+    background-color: rgb(20, 20, 20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    font-size: .90rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    padding-right: .9rem;
+}
+
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fc1722;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.menu a:hover::after {
+    width: 80%;
+}
+
+h3 {
+    color: #fc1722;
+    position: absolute;
+}
+
+.cursos {
+    display: flex;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 20px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.curso img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 300px;
+    max-height: 290px;
+    min-width: 248px;
+    border-radius: 17px 17px 0 0;
+}
+
+.curso {
+    color: #111;
+    background-color: white;
+    border: white solid 3px;
+    margin-top: 40px;
+    width: 253px;
+    height: 365px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.curso a {
+    text-decoration: none;
+    color: #fc1722;
+}
+
+.curso:hover {
+    border: #fc1722 outset 3px;
+    transform: translate(2px, -8px);
+}
+
+.icon_star {
+    padding-right: 9rem;
+}
+
+@media (max-width: 768px) {
+    .curso {
+        margin: auto;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+}
